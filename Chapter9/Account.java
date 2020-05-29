@@ -15,37 +15,37 @@ class Account {
 		dateCreated = new Date();
 	}
 	
-	int getID() {
+	public int getID() {
 		return id;
 	}
-	double getBalance() {
+	public double getBalance() {
 		return this.balance;
 	}
-	double getAnnualInterestRate() {
+	public double getAnnualInterestRate() {
 		return annualInterestRate;
 	}
-	Date getDateCreated() {
+	public Date getDateCreated() {
 		return dateCreated;
 	}
-	void setID(int newID) {
+	public void setID(int newID) {
 		id = newID;
 	}
-	void setBalance(double newBalance) {
+	public void setBalance(double newBalance) {
 		balance = newBalance;
 	}
-	void setAnnualInterestRate(double newRate) {
+	public void setAnnualInterestRate(double newRate) {
 		annualInterestRate = newRate;
 	}
-	double getMonthlyInterestRate() {
+	public double getMonthlyInterestRate() {
 		return annualInterestRate / 12;
 	}
-	double getMonthlyInterest() {
+	public double getMonthlyInterest() {
 		return balance * getMonthlyInterestRate();
 	}
-	void withdraw(double amount) {
+	public void withdraw(double amount) {
 		balance -= amount;
 	}
-	void deposit(double amount) {
+	public void deposit(double amount) {
 		balance += amount;
 	}
 
