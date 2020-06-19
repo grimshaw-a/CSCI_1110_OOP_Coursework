@@ -15,7 +15,11 @@ public class DisplayClock extends Application {
   @Override // Override the start method in the Application class
   public void start(Stage primaryStage) {
     // Create a clock and a label
-    ClockPane clock = new ClockPane();
+	int hour = (int)(Math.random() * 12);
+	int minute = (int)(Math.random() * 60);                                                      
+	int second = (int)(Math.random() * 60); 
+    ClockPane clock = new ClockPane(hour, minute, second);
+    clock.setSecondHandVisible(false);
     String timeString = clock.getHour() + ":" + clock.getMinute() 
       + ":" + clock.getSecond();
     Label lblCurrentTime = new Label(timeString);
