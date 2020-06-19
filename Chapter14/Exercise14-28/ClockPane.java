@@ -18,16 +18,13 @@ public class ClockPane extends Pane {
   private int hour;
   private int minute;
   private int second;
-  private boolean hourHandVisible;
-  private boolean minuteHandVisible;
-  private boolean secondHandVisible;
+  private boolean hourHandVisible = true;
+  private boolean minuteHandVisible = true;
+  private boolean secondHandVisible = true;
   
   /** Construct a default clock with the current time*/
   public ClockPane() {
     setCurrentTime();
-    hourHandVisible = true;
-    minuteHandVisible = true;
-    secondHandVisible = false;
   }
 
   /** Construct a clock with specified hour, minute, and second */
@@ -106,11 +103,8 @@ public class ClockPane extends Pane {
     Calendar calendar = new GregorianCalendar();
 
     // Set current hour, minute and second
-    //this.hour = calendar.get(Calendar.HOUR_OF_DAY);
-    Random randHour = new Random();
-    this.hour = randHour.nextInt(12);
-    //this.minute = calendar.get(Calendar.MINUTE);
-    this.minute = randHour.nextInt(2) * 30;
+    this.hour = calendar.get(Calendar.HOUR_OF_DAY);
+    this.minute = calendar.get(Calendar.MINUTE);
     this.second = calendar.get(Calendar.SECOND);
     
     paintClock(); // Repaint the clock
