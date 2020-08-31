@@ -15,8 +15,8 @@ import java.time.LocalDate;
  * <h1>Custom Book Generator</h1>
  * <p>This program creates a GUI for customers to enter information that will be used in creating them a custom book.</p>
  * @author Adam Grimshaw
- * @since 2020-07-08
- * Course: Object Oriented Programming, Southwest Technical College
+ * Date: 2020-07-08
+ * Course: CSCI 1110 Object Oriented Programming, Southwest Technical College
  */
 public class InputScreenInterface extends Application {
 	//Global properties used in the methods below. Creates an instance of ZooBook.
@@ -277,7 +277,7 @@ public class InputScreenInterface extends Application {
 			} else {
 				customBook.setFriendName(inputText.getText());
 				java.time.LocalDate todayDate = LocalDate.now();
-				String filename = "/Users/adamgrimshaw/Documents/Adam/Java/CustomBookProject/PhotoshopScripts/Orders/" + todayDate + "-" + customBook.getChildName() + ".txt";
+				String filename = "/Users/...FilePath.../" + todayDate + "-" + customBook.getChildName() + ".txt";
 				try {
 					BufferedWriter output = new BufferedWriter(new FileWriter(filename));
 					output.write(customBook.getChildName() + "#" + customBook.getGender() + "#" + customBook.getHairColor() + "#" + customBook.getSkinTone() + "#" + customBook.hasGlasses() + "#" + customBook.getShirtColor() + "#" + customBook.getAnimal() + "#" + customBook.getFriendName());
