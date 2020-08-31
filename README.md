@@ -1,10 +1,9 @@
 ## CSCI 1110: Object Oriented Programming
 
+<p> Programming Language: Java </p>
 <p>Date: March 2020 </p>
 <p>Student: Adam Grimshaw </p>
 <p>School: Southwest Technical College </p>
-<p>Program: Software Development </p>
-<p> Programming Language: Java </p>
 
 ### Repository Description
 
