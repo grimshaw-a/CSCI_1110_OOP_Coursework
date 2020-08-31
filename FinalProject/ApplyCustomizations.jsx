@@ -1,12 +1,12 @@
 /**
-/* Date: 7/1/20 
 /* Author: Adam Grimshaw 
-/* Course: OOP 
+/* Date: 7/1/20 
+/* Course: CSCI 1110 Object Oriented Programming, Southwest Technical College 
 /* Description: Customizes pages for a picture book. 
 */
 
 //Reference and open page 1
-var page1 = new File('~/Documents/Adam/Java/CustomBookProject/PhotoshopScripts/ZooBook-Page1.tif');
+var page1 = new File('~/Documents/...FilePath.../ZooBook-Page1.tif');
 var docRef = app.open(page1);
 
 //Customization information
@@ -85,7 +85,7 @@ saveJpeg(userInput[0] + '-Page-1');
 app.activeDocument.close(SaveOptions.DONOTSAVECHANGES);
 
 //Open page 2
-var page2 = new File('~/Documents/Adam/Java/CustomBookProject/PhotoshopScripts/ZooBook-Page2.tif');
+var page2 = new File('~/Documents/...FilePath.../ZooBook-Page2.tif');
 app.open(page2);
 
 //Set text for page 2
