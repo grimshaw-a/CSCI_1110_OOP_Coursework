@@ -2,8 +2,8 @@
  * <h1>Custom Book Generator</h1>
  * <p>This class describes the contents of a zoo themed childrens book. It sets up all the customizable properties of the book.</p>
  * @author Adam Grimshaw
- * @since 2020-07-08
- * Course: Object Oriented Programming, Southwest Technical College
+ * Date: 2020-07-08
+ * Course: CSCI 1110 Object Oriented Programming, Southwest Technical College
  */
 public class ZooBook {
 	private String childName = "";
